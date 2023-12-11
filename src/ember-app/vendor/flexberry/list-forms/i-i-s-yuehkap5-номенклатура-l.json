@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-номенклатура-e",
+  "editForm": "i-i-s-yuehkap5-номенклатура-e",
+  "external": false,
+  "caption": "Номенклатура",
+  "name": "IISYuehkap5НоменклатураL",
+  "className": "НоменклатураL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-номенклатура",
+      "modelProjection": "НоменклатураL"
+    }
+  ]
+}

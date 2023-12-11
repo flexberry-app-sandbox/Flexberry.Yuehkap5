@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-контрагенты-e",
+  "editForm": "i-i-s-yuehkap5-контрагенты-e",
+  "external": false,
+  "caption": "Контрагенты",
+  "name": "IISYuehkap5КонтрагентыL",
+  "className": "КонтрагентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-контрагенты",
+      "modelProjection": "КонтрагентыL"
+    }
+  ]
+}

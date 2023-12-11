@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-организации-e",
+  "editForm": "i-i-s-yuehkap5-организации-e",
+  "external": false,
+  "caption": "Организации",
+  "name": "IISYuehkap5ОрганизацииL",
+  "className": "ОрганизацииL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-организации",
+      "modelProjection": "ОрганизацииL"
+    }
+  ]
+}

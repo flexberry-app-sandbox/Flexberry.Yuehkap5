@@ -1,0 +1,62 @@
+﻿{
+  "name": "IISYuehkap5Номенклатура",
+  "modelName": "i-i-s-yuehkap5-номенклатура",
+  "className": "Номенклатура",
+  "nameSpace": "IIS.Yuehkap5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номенклатура",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контрагенты",
+      "relatedTo": "i-i-s-yuehkap5-контрагенты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НоменклатураE",
+      "modelName": "i-i-s-yuehkap5-номенклатура",
+      "attrs": [
+        {
+          "name": "номенклатура",
+          "caption": "Номенклатура",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "НоменклатураL",
+      "modelName": "i-i-s-yuehkap5-номенклатура",
+      "attrs": [
+        {
+          "name": "номенклатура",
+          "caption": "Номенклатура",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Единицы измер",
+  "name": "IISYuehkap5ЕдиницыИзмерE",
+  "className": "ЕдиницыИзмерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-единицы-измер",
+      "modelProjection": "ЕдиницыИзмерE"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISYuehkap5ПланЗакупок",
+  "modelName": "i-i-s-yuehkap5-план-закупок",
+  "className": "ПланЗакупок",
+  "nameSpace": "IIS.Yuehkap5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаНачала",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организации",
+      "relatedTo": "i-i-s-yuehkap5-организации",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "склады",
+      "relatedTo": "i-i-s-yuehkap5-склады",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "план",
+      "relatedTo": "i-i-s-yuehkap5-план",
+      "inverse": "планЗакупок"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПланЗакупокE",
+      "modelName": "i-i-s-yuehkap5-план-закупок",
+      "attrs": [
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ПланE",
+          "caption": "План",
+          "name": "план",
+          "relatedTo": "i-i-s-yuehkap5-план",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПланЗакупокL",
+      "modelName": "i-i-s-yuehkap5-план-закупок",
+      "attrs": [
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

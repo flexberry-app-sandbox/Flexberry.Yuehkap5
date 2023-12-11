@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-единицы-измер-e",
+  "editForm": "i-i-s-yuehkap5-единицы-измер-e",
+  "external": false,
+  "caption": "Единицы измер",
+  "name": "IISYuehkap5ЕдиницыИзмерL",
+  "className": "ЕдиницыИзмерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-единицы-измер",
+      "modelProjection": "ЕдиницыИзмерL"
+    }
+  ]
+}

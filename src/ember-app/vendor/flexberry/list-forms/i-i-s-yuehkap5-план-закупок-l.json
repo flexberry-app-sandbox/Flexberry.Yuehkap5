@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-план-закупок-e",
+  "editForm": "i-i-s-yuehkap5-план-закупок-e",
+  "external": false,
+  "caption": "План закупок",
+  "name": "IISYuehkap5ПланЗакупокL",
+  "className": "ПланЗакупокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-план-закупок",
+      "modelProjection": "ПланЗакупокL"
+    }
+  ]
+}

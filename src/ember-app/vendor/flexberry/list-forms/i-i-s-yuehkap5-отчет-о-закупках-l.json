@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-отчет-о-закупках-e",
+  "editForm": "i-i-s-yuehkap5-отчет-о-закупках-e",
+  "external": false,
+  "caption": "Отчет о закупках",
+  "name": "IISYuehkap5ОтчетОЗакупкахL",
+  "className": "ОтчетОЗакупкахL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-отчет-о-закупках",
+      "modelProjection": "ОтчетОЗакупкахL"
+    }
+  ]
+}

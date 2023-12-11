@@ -1,0 +1,30 @@
+﻿{
+  "name": "IISYuehkap5ОтчетОЗакупках",
+  "modelName": "i-i-s-yuehkap5-отчет-о-закупках",
+  "className": "ОтчетОЗакупках",
+  "nameSpace": "IIS.Yuehkap5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтчетОЗакупкахE",
+      "modelName": "i-i-s-yuehkap5-отчет-о-закупках",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОтчетОЗакупкахL",
+      "modelName": "i-i-s-yuehkap5-отчет-о-закупках",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

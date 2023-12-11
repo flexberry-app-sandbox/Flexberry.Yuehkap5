@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Контрагенты",
+  "name": "IISYuehkap5КонтрагентыE",
+  "className": "КонтрагентыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-контрагенты",
+      "modelProjection": "КонтрагентыE"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Yuehkap5.model.ZakazPost</class>
+        <class>Yuehkap5.model.TCHZakaz</class>
+        <class>Yuehkap5.model.Organizacii</class>
+        <class>Yuehkap5.model.Nomenklatura</class>
+        <class>Yuehkap5.model.OtchetOZakupkax</class>
+        <class>Yuehkap5.model.Sklady</class>
+        <class>Yuehkap5.model.Plan</class>
+        <class>Yuehkap5.model.Kontragenty</class>
+        <class>Yuehkap5.model.EdinicyIzmer</class>
+        <class>Yuehkap5.model.PlanZakupok</class>
+        <class>Yuehkap5.model.FlexberryAdvLimit</class>
+        <class>Yuehkap5.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Yuehkap5.model.NewPlatformFlexberryServicesLock</class>
+        <class>Yuehkap5.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

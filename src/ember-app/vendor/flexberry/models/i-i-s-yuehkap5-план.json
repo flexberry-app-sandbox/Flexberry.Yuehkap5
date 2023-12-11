@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISYuehkap5План",
+  "modelName": "i-i-s-yuehkap5-план",
+  "className": "План",
+  "nameSpace": "IIS.Yuehkap5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "этоУслуга",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "единицыИзмер",
+      "relatedTo": "i-i-s-yuehkap5-единицы-измер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенклатура",
+      "relatedTo": "i-i-s-yuehkap5-номенклатура",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планЗакупок",
+      "relatedTo": "i-i-s-yuehkap5-план-закупок",
+      "inverse": "план"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПланE",
+      "modelName": "i-i-s-yuehkap5-план",
+      "attrs": [
+        {
+          "name": "этоУслуга",
+          "caption": "Это услуга",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-yuehkap5-заказ-пост-e",
+  "editForm": "i-i-s-yuehkap5-заказ-пост-e",
+  "external": false,
+  "caption": "Заказ пост",
+  "name": "IISYuehkap5ЗаказПостL",
+  "className": "ЗаказПостL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-yuehkap5-заказ-пост",
+      "modelProjection": "ЗаказПостL"
+    }
+  ]
+}

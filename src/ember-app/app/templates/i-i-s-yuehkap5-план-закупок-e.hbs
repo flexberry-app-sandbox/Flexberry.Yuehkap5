@@ -36,6 +36,26 @@
     {{flexberry-validationmessage error=(v-get validationModel "датаНачала" "message")}}
   </div>
   <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.организации.организация
+      class=(if (v-get validationModel.организации "организация" "isInvalid") "error")
+      label=(t "forms.i-i-s-yuehkap5-план-закупок-e.организации.организация-caption")
+      data-test-i-i-s-yuehkap5-план-закупок-e-организации-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.организации "организация" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.склады.склад
+      class=(if (v-get validationModel.склады "склад" "isInvalid") "error")
+      label=(t "forms.i-i-s-yuehkap5-план-закупок-e.склады.склад-caption")
+      data-test-i-i-s-yuehkap5-план-закупок-e-склады-склад=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.склады "склад" "message")}}
+  </div>
+  <div class="field">
     <label>{{t "forms.i-i-s-yuehkap5-план-закупок-e.план-caption"}}</label>
     {{flexberry-groupedit
       componentName="планGroupEdit"

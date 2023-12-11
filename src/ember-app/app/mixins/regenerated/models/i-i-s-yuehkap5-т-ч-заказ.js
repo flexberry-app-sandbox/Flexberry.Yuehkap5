@@ -10,6 +10,8 @@ export let Model = Mixin.create({
   суммаНДС: DS.attr('number'),
   цена: DS.attr('number'),
   этоУслуга: DS.attr('boolean'),
+  единицыИзмер: DS.belongsTo('i-i-s-yuehkap5-единицы-измер', { inverse: null, async: false }),
+  номенклатура: DS.belongsTo('i-i-s-yuehkap5-номенклатура', { inverse: null, async: false }),
   заказПост: DS.belongsTo('i-i-s-yuehkap5-заказ-пост', { inverse: 'заказ', async: false })
 });
 
@@ -48,6 +50,20 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
+  единицыИзмер: {
+    descriptionKey: 'models.i-i-s-yuehkap5-т-ч-заказ.validations.единицыИзмер.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
+  номенклатура: {
+    descriptionKey: 'models.i-i-s-yuehkap5-т-ч-заказ.validations.номенклатура.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
   заказПост: {
     descriptionKey: 'models.i-i-s-yuehkap5-т-ч-заказ.validations.заказПост.__caption__',
     validators: [
@@ -59,10 +75,16 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТЧЗаказE', 'i-i-s-yuehkap5-т-ч-заказ', {
-    цена: attr('Цена', { index: 0 }),
-    этоУслуга: attr('Это услуга', { index: 1 }),
-    суммаНДС: attr('Сумма НДС', { index: 2 }),
-    количество: attr('Количество', { index: 3 }),
-    сумма: attr('Сумма', { index: 4 })
+    номенклатура: belongsTo('i-i-s-yuehkap5-номенклатура', '', {
+      номенклатура: attr('', { index: 0 })
+    }, { index: -1, hidden: true }),
+    единицыИзмер: belongsTo('i-i-s-yuehkap5-единицы-измер', '', {
+      единицаИзмер: attr('', { index: 1 })
+    }, { index: -1, hidden: true }),
+    цена: attr('Цена', { index: 2 }),
+    этоУслуга: attr('Это услуга', { index: 3 }),
+    суммаНДС: attr('Сумма НДС', { index: 4 }),
+    количество: attr('Количество', { index: 5 }),
+    сумма: attr('Сумма', { index: 6 })
   });
 };

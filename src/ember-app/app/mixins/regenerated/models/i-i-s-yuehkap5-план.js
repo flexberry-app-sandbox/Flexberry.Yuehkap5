@@ -52,6 +52,15 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ПланE', 'i-i-s-yuehkap5-план', {
     этоУслуга: attr('Это услуга', { index: 0 }),
-    количество: attr('Количество', { index: 1 })
+    количество: attr('Количество', { index: 1 }),
+    номенклатура: belongsTo('i-i-s-yuehkap5-номенклатура', '', {
+      номенклатура: attr('', { index: 2 }),
+      контрагенты: belongsTo('i-i-s-yuehkap5-контрагенты', '', {
+        контрагент: attr('', { index: 4 })
+      }, { index: -1, hidden: true })
+    }, { index: -1, hidden: true }),
+    единицыИзмер: belongsTo('i-i-s-yuehkap5-единицы-измер', '', {
+      единицаИзмер: attr('', { index: 3 })
+    }, { index: -1, hidden: true })
   });
 };

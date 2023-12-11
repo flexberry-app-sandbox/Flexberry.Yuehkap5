@@ -30,6 +30,8 @@ namespace IIS.Yuehkap5
     [Caption("Т ч заказ")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧЗаказE", new string[] {
+            "Номенклатура.Номенклатура",
+            "ЕдиницыИзмер.ЕдиницаИзмер",
             "Цена as \'Цена\'",
             "ЭтоУслуга as \'Это услуга\'",
             "СуммаНДС as \'Сумма НДС\'",
@@ -47,6 +49,10 @@ namespace IIS.Yuehkap5
         private int fКоличество;
         
         private int fСумма;
+        
+        private IIS.Yuehkap5.ЕдиницыИзмер fЕдиницыИзмер;
+        
+        private IIS.Yuehkap5.Номенклатура fНоменклатура;
         
         private IIS.Yuehkap5.ЗаказПост fЗаказПост;
         
@@ -207,6 +213,74 @@ namespace IIS.Yuehkap5
                 // *** Start programmer edit section *** (ТЧЗаказ.ЭтоУслуга Set end)
 
                 // *** End programmer edit section *** (ТЧЗаказ.ЭтоУслуга Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Т ч заказ.
+        /// </summary>
+        // *** Start programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер CustomAttributes)
+
+        // *** End programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер CustomAttributes)
+        [PropertyStorage(new string[] {
+                "ЕдиницыИзмер"})]
+        [NotNull()]
+        public virtual IIS.Yuehkap5.ЕдиницыИзмер ЕдиницыИзмер
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Get start)
+
+                // *** End programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Get start)
+                IIS.Yuehkap5.ЕдиницыИзмер result = this.fЕдиницыИзмер;
+                // *** Start programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Get end)
+
+                // *** End programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Set start)
+
+                // *** End programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Set start)
+                this.fЕдиницыИзмер = value;
+                // *** Start programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Set end)
+
+                // *** End programmer edit section *** (ТЧЗаказ.ЕдиницыИзмер Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Т ч заказ.
+        /// </summary>
+        // *** Start programmer edit section *** (ТЧЗаказ.Номенклатура CustomAttributes)
+
+        // *** End programmer edit section *** (ТЧЗаказ.Номенклатура CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Номенклатура"})]
+        [NotNull()]
+        public virtual IIS.Yuehkap5.Номенклатура Номенклатура
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ТЧЗаказ.Номенклатура Get start)
+
+                // *** End programmer edit section *** (ТЧЗаказ.Номенклатура Get start)
+                IIS.Yuehkap5.Номенклатура result = this.fНоменклатура;
+                // *** Start programmer edit section *** (ТЧЗаказ.Номенклатура Get end)
+
+                // *** End programmer edit section *** (ТЧЗаказ.Номенклатура Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ТЧЗаказ.Номенклатура Set start)
+
+                // *** End programmer edit section *** (ТЧЗаказ.Номенклатура Set start)
+                this.fНоменклатура = value;
+                // *** Start programmer edit section *** (ТЧЗаказ.Номенклатура Set end)
+
+                // *** End programmer edit section *** (ТЧЗаказ.Номенклатура Set end)
             }
         }
         

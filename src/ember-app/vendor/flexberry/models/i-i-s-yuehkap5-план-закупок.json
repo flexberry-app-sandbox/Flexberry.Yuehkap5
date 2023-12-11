@@ -51,7 +51,50 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организации",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "организация",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "организации",
+          "relatedTo": "i-i-s-yuehkap5-организации",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Склады",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "склад",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "склады",
+          "relatedTo": "i-i-s-yuehkap5-склады",
+          "inverse": null
+        }
+      ],
       "hasMany": [
         {
           "projectionName": "ПланE",

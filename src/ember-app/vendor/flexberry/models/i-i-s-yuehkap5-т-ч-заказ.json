@@ -56,6 +56,20 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "единицыИзмер",
+      "relatedTo": "i-i-s-yuehkap5-единицы-измер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенклатура",
+      "relatedTo": "i-i-s-yuehkap5-номенклатура",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "заказПост",
       "relatedTo": "i-i-s-yuehkap5-заказ-пост",
       "inverse": "заказ"
@@ -71,34 +85,77 @@
           "name": "цена",
           "caption": "Цена",
           "hidden": false,
-          "index": 0
+          "index": 2
         },
         {
           "name": "этоУслуга",
           "caption": "Это услуга",
           "hidden": false,
-          "index": 1
+          "index": 3
         },
         {
           "name": "суммаНДС",
           "caption": "Сумма НДС",
           "hidden": false,
-          "index": 2
+          "index": 4
         },
         {
           "name": "количество",
           "caption": "Количество",
           "hidden": false,
-          "index": 3
+          "index": 5
         },
         {
           "name": "сумма",
           "caption": "Сумма",
           "hidden": false,
-          "index": 4
+          "index": 6
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Номенклатура",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номенклатура",
+              "caption": "",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "номенклатура",
+          "relatedTo": "i-i-s-yuehkap5-номенклатура",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЕдиницыИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "единицаИзмер",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "единицыИзмер",
+          "relatedTo": "i-i-s-yuehkap5-единицы-измер",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

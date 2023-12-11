@@ -67,7 +67,72 @@
           "index": 1
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Номенклатура",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Номенклатура.Контрагенты",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "контрагент",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "контрагенты",
+              "relatedTo": "i-i-s-yuehkap5-контрагенты",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номенклатура",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "номенклатура",
+          "relatedTo": "i-i-s-yuehkap5-номенклатура",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЕдиницыИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "единицаИзмер",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "единицыИзмер",
+          "relatedTo": "i-i-s-yuehkap5-единицы-измер",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

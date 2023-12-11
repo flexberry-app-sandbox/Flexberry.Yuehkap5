@@ -108,6 +108,42 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
+        'new-folder1': {
+          caption: 'NewFolder1',
+          title: 'NewFolder1',
+          'i-i-s-yuehkap5-заказ-пост-l': {
+            caption: 'ЗаказПостL',
+            title: 'Заказ пост'
+          },
+          'i-i-s-yuehkap5-единицы-измер-l': {
+            caption: 'ЕдиницыИзмерL',
+            title: 'Единицы измер'
+          },
+          'i-i-s-yuehkap5-номенклатура-l': {
+            caption: 'НоменклатураL',
+            title: 'Номенклатура'
+          },
+          'i-i-s-yuehkap5-план-закупок-l': {
+            caption: 'ПланЗакупокL',
+            title: 'План закупок'
+          },
+          'i-i-s-yuehkap5-склады-l': {
+            caption: 'СкладыL',
+            title: 'Склады'
+          },
+          'i-i-s-yuehkap5-отчет-о-закупках-l': {
+            caption: 'ОтчетОЗакупкахL',
+            title: 'Отчет о закупках'
+          },
+          'i-i-s-yuehkap5-организации-l': {
+            caption: 'ОрганизацииL',
+            title: 'Организации'
+          },
+          'i-i-s-yuehkap5-контрагенты-l': {
+            caption: 'КонтрагентыL',
+            title: 'Контрагенты'
+          }
+        },
         yuehkap5: {
           caption: 'Yuehkap5',
           title: 'Yuehkap5',

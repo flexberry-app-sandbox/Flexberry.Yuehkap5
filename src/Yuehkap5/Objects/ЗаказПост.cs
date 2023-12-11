@@ -33,7 +33,10 @@ namespace IIS.Yuehkap5
             "ДатаОкончания as \'Дата окончания\'",
             "СуммаДокумента as \'Сумма документа\'",
             "ДатаНачала as \'Дата начала\'",
-            "СостояниеОплаты as \'Состояние оплаты\'"})]
+            "СостояниеОплаты as \'Состояние оплаты\'",
+            "Контрагенты.Контрагент",
+            "Организации.Организация",
+            "Склады.Склад"})]
     [AssociatedDetailViewAttribute("ЗаказПостE", "Заказ", "ТЧЗаказE", true, "", "Заказ", true, new string[] {
             ""})]
     [View("ЗаказПостL", new string[] {
@@ -54,9 +57,9 @@ namespace IIS.Yuehkap5
     public class ЗаказПост : ICSSoft.STORMNET.DataObject
     {
         
-        private System.DateTime fДатаОкончания;
-        
         private int fСуммаДокумента;
+        
+        private System.DateTime fДатаОкончания;
         
         private System.DateTime fДатаНачала;
         

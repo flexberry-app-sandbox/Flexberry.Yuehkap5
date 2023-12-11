@@ -38,6 +38,26 @@ public class TCHZakaz {
     private Integer сумма;
 
     @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "EdinicyIzmer")
+    @Convert("EdinicyIzmer")
+    @Column(name = "ЕдиницыИзмер", length = 16, unique = true, nullable = false)
+    private UUID _edinicyizmerid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "EdinicyIzmer", insertable = false, updatable = false)
+    private EdinicyIzmer edinicyizmer;
+
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Nomenklatura")
+    @Convert("Nomenklatura")
+    @Column(name = "Номенклатура", length = 16, unique = true, nullable = false)
+    private UUID _nomenklaturaid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Nomenklatura", insertable = false, updatable = false)
+    private Nomenklatura nomenklatura;
+
+    @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "ZakazPost")
     @Convert("ZakazPost")
     @Column(name = "ЗаказПост", length = 16, unique = true, nullable = false)

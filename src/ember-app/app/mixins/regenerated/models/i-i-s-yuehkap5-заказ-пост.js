@@ -93,12 +93,27 @@ export let defineProjections = function (modelClass) {
     суммаДокумента: attr('Сумма документа', { index: 1 }),
     датаНачала: attr('Дата начала', { index: 2 }),
     состояниеОплаты: attr('Состояние оплаты', { index: 3 }),
+    контрагенты: belongsTo('i-i-s-yuehkap5-контрагенты', '', {
+      контрагент: attr('', { index: 4 })
+    }, { index: -1, hidden: true }),
+    организации: belongsTo('i-i-s-yuehkap5-организации', '', {
+      организация: attr('', { index: 5 })
+    }, { index: -1, hidden: true }),
+    склады: belongsTo('i-i-s-yuehkap5-склады', '', {
+      склад: attr('', { index: 6 })
+    }, { index: -1, hidden: true }),
     заказ: hasMany('i-i-s-yuehkap5-т-ч-заказ', 'Заказ', {
-      цена: attr('Цена', { index: 0 }),
-      этоУслуга: attr('Это услуга', { index: 1 }),
-      суммаНДС: attr('Сумма НДС', { index: 2 }),
-      количество: attr('Количество', { index: 3 }),
-      сумма: attr('Сумма', { index: 4 })
+      номенклатура: belongsTo('i-i-s-yuehkap5-номенклатура', '', {
+        номенклатура: attr('', { index: 0 })
+      }, { index: -1, hidden: true }),
+      единицыИзмер: belongsTo('i-i-s-yuehkap5-единицы-измер', '', {
+        единицаИзмер: attr('', { index: 1 })
+      }, { index: -1, hidden: true }),
+      цена: attr('Цена', { index: 2 }),
+      этоУслуга: attr('Это услуга', { index: 3 }),
+      суммаНДС: attr('Сумма НДС', { index: 4 }),
+      количество: attr('Количество', { index: 5 }),
+      сумма: attr('Сумма', { index: 6 })
     })
   });
 
@@ -114,11 +129,17 @@ export let defineProjections = function (modelClass) {
     суммаДокумента: attr('Сумма документа', { index: 1 }),
     датаНачала: attr('Дата начала', { index: 2 }),
     заказ: hasMany('i-i-s-yuehkap5-т-ч-заказ', 'Заказ', {
-      цена: attr('Цена', { index: 0 }),
-      этоУслуга: attr('Это услуга', { index: 1 }),
-      суммаНДС: attr('Сумма НДС', { index: 2 }),
-      количество: attr('Количество', { index: 3 }),
-      сумма: attr('Сумма', { index: 4 })
+      номенклатура: belongsTo('i-i-s-yuehkap5-номенклатура', '', {
+        номенклатура: attr('', { index: 0 })
+      }, { index: -1, hidden: true }),
+      единицыИзмер: belongsTo('i-i-s-yuehkap5-единицы-измер', '', {
+        единицаИзмер: attr('', { index: 1 })
+      }, { index: -1, hidden: true }),
+      цена: attr('Цена', { index: 2 }),
+      этоУслуга: attr('Это услуга', { index: 3 }),
+      суммаНДС: attr('Сумма НДС', { index: 4 }),
+      количество: attr('Количество', { index: 5 }),
+      сумма: attr('Сумма', { index: 6 })
     })
   });
 

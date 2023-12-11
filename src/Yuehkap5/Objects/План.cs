@@ -30,7 +30,10 @@ namespace IIS.Yuehkap5
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ПланE", new string[] {
             "ЭтоУслуга as \'Это услуга\'",
-            "Количество as \'Количество\'"})]
+            "Количество as \'Количество\'",
+            "Номенклатура.Номенклатура",
+            "ЕдиницыИзмер.ЕдиницаИзмер",
+            "Номенклатура.Контрагенты.Контрагент"})]
     public class План : ICSSoft.STORMNET.DataObject
     {
         

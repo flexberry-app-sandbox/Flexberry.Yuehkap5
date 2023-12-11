@@ -30,7 +30,9 @@ namespace IIS.Yuehkap5
     [Caption("План закупок")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ПланЗакупокE", new string[] {
-            "ДатаНачала as \'Дата начала\'"})]
+            "ДатаНачала as \'Дата начала\'",
+            "Организации.Организация",
+            "Склады.Склад"})]
     [AssociatedDetailViewAttribute("ПланЗакупокE", "План", "ПланE", true, "", "План", true, new string[] {
             ""})]
     [View("ПланЗакупокL", new string[] {

@@ -24,11 +24,11 @@ public class ZakazPost {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "ДатаОкончания")
-    private Date датаокончания;
-
     @Column(name = "СуммаДокумента")
     private Integer суммадокумента;
+
+    @Column(name = "ДатаОкончания")
+    private Date датаокончания;
 
     @Column(name = "ДатаНачала")
     private Date датаначала;
@@ -88,20 +88,20 @@ public class ZakazPost {
         return primarykey;
     }
 
-    public Date getДатаОкончания() {
-      return датаокончания;
-    }
-
-    public void setДатаОкончания(Date датаокончания) {
-      this.датаокончания = датаокончания;
-    }
-
     public Integer getСуммаДокумента() {
       return суммадокумента;
     }
 
     public void setСуммаДокумента(Integer суммадокумента) {
       this.суммадокумента = суммадокумента;
+    }
+
+    public Date getДатаОкончания() {
+      return датаокончания;
+    }
+
+    public void setДатаОкончания(Date датаокончания) {
+      this.датаокончания = датаокончания;
     }
 
     public Date getДатаНачала() {

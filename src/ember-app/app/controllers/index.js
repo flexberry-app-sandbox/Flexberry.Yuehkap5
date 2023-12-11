@@ -22,48 +22,49 @@ export default Controller.extend({
             link: 'i-i-s-yuehkap5-заказ-пост-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-заказ-пост-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-заказ-пост-l.title'),
-            icon: 'list',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-единицы-измер-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-единицы-измер-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-единицы-измер-l.title'),
-            icon: 'chart line',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-номенклатура-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-номенклатура-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-номенклатура-l.title'),
-            icon: 'calendar',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-план-закупок-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-план-закупок-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-план-закупок-l.title'),
-            icon: 'book',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-склады-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-склады-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-склады-l.title'),
-            icon: 'address card',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-отчет-о-закупках-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-отчет-о-закупках-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-отчет-о-закупках-l.title'),
-            icon: 'phone',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-организации-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-организации-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-организации-l.title'),
-            icon: 'list',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-yuehkap5-контрагенты-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-контрагенты-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-yuehkap5-контрагенты-l.title'),
+            icon: 'chart line',
             children: null
           }]
         }
